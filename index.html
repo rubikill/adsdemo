@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title Page</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://static1.yan.vn/web_js/scripts/jquery-1.10.2.min.js?v=1.0.1"></script>
+    <script src="https://static1.yan.vn/web_js/scripts/bootstrap/js/bootstrap.min.js?v=1.0.1"></script>
+</head>
+
+<body>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900i" rel="stylesheet">
+    <style>
+        .js-container {
+        height: 100%;
+        width: 100%;
+    }
+
+    .hero-container {
+        height: 100%;
+        z-index: 2;
+        position: relative;
+        background: #fff;
+    }
+
+    .wrap {
+        position: relative;
+        width: 210px;
+        margin: 0 auto;
+        height: 373px;
+        /*margin-top: 15px;*/
+    }
+
+    .hero-container>img {
+        max-width: 210px;
+        width: 100%;
+        position: absolute;
+        opacity: 0;
+        display: none;
+        transition-duration: 0.1s;
+        transition-timing-function: cubic-bezier(0.25, 0.1, 0.1, 1.17);
+    }
+
+    .hero-container img.first {
+        display: block;
+        opacity: 1;
+        position: absolute;
+        z-index: 0;
+    }
+
+    .hero-container img.active {
+        display: block;
+        opacity: 1;
+        position: absolute;
+        z-index: 4;
+    }
+
+    .ads-text {
+        text-align: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        font-size: 12px;
+        bottom: 18%;
+        z-index: 4;
+    }
+
+    .hero-container .ads-text img {
+        display: block;
+        width: 50% !important;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .ads-text p {
+        margin-bottom: 10px;
+        color: #fff;
+        font-weight: 700;
+    }
+
+    .button-bottom {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 12%;
+        z-index: 40;
+    }
+
+    .button-bottom a {
+        color: #fff;
+        padding: 5px 10px;
+        background-color: #d33;
+        font-size: 12px;
+    }
+    </style>
+    <div class="container mt-3">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="/">Ads Demo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a href="#" class="js-nav-item nav-link" data-id="#hero-container">Milo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="js-nav-item nav-link" data-id="#video-container">Rayban</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="wrap mt-3">
+            <div id="hero-container" class="js-container hero-container">
+                <img class="img first" src="http://static1.yan.vn/web_images/milo/images_210/milo_061.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_000.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_001.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_002.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_003.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_004.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_005.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_006.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_007.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_008.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_009.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_010.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_011.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_012.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_013.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_014.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_015.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_016.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_017.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_018.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_019.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_020.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_021.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_022.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_023.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_024.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_025.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_026.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_027.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_028.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_029.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_030.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_031.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_032.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_033.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_034.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_035.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_036.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_037.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_038.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_039.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_040.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_041.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_042.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_043.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_044.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_045.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_046.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_047.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_048.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_049.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_059.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_051.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_052.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_053.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_054.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_055.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_056.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_057.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_058.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_059.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_060.jpg" alt="" />
+                <img class="img" src="http://static1.yan.vn/web_images/milo/images_210/milo_061.jpg" alt="" />
+                <div class="ads-text">
+                    <img src="http://static1.yan.vn/web_images/milo/images/swipe.png" alt="Titl phone" style="z-index: 10;" class="tilt-image">
+                </div>
+                <div class="button-bottom">
+                    <a href="#">
+                        <strong style="font-family: 'Montserrat', sans-serif; color: #fff !important;">Xem Chi Tiết</strong>
+                    </a>
+                </div>
+            </div>
+            <div id="video-container" class="js-container d-none">
+                <iframe src="https://player.vimeo.com/video/275594029" width="320" height="690" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <script>
+    $(document).on('click', '.js-nav-item', function(e) {
+        var self = $(this);
+        $('.js-container').addClass('d-none')
+        console.log(self.attr('data-id'))
+        $(self.attr('data-id')).removeClass('d-none')
+    })
+
+    $(document).ready(function() {
+        var flagInteractive = false;
+        var imgs = $(".hero-container img");
+        var data = [];
+        var onTouch = false;
+        for (let j = imgs.length - 1; j >= 0; j--) {
+            data.push(imgs[j]);
+        }
+        var currentPosition = -1;
+        var element = document.getElementById('hero-container');
+        var width = element.clientWidth;
+        $('.hero-container').on("mousemove", function(e) {
+            currentPosition = e.originalEvent.layerX;
+            var length = imgs.length;
+            var index = Math.floor((width - currentPosition) / (width / length));
+            if (index != null) {
+                if (flagInteractive == false) {
+                    flagInteractive = true;
+                }
+                imgs.removeClass('active');
+                data[index].classList.add('active');
+            }
+        });
+
+        $('.hero-container').on("mouseout", function(e) {
+            onTouch = false;
+        })
+
+        $('.hero-container').on("touchmove", function(e) {
+            e.preventDefault();
+            var touch = e.originalEvent.touches[0].clientX;
+
+            var length = imgs.length;
+            var index = Math.floor((width - touch) / (width / length));
+            if (index != null) {
+                if (flagInteractive == false) {
+                    _gaq.push(['_trackEvent', 'Milo Interactive Ads', 'Interactive', '@(contentReading.Id)']);
+                    flagInteractive = true;
+                }
+                imgs.removeClass('active');
+                data[index].classList.add('active');
+                $('#test').html(index);
+                onTouch = true;
+                $('#test').html(onTouch);
+            }
+        });
+        $('.hero-container').on("touchend", function() {
+            onTouch = false;
+            $('#test').html(onTouch);
+        })
+
+        function handleOrientation(event) {
+            var x = event.beta; // In degree in the range [-180,180]
+            var y = event.gamma; // In degree in the range [-90,90]
+            var index = Math.floor((y * (imgs.length / 2)) / 40);
+            $('#test').html(index);
+            if (index > 0 || index < 0) {
+                if (flagInteractive == false) {
+                    flagInteractive = true;
+                }
+                imgs.removeClass('active');
+                index = index + imgs.length / 2;
+                if (y > 40) {
+                    index = imgs.length;
+                }
+                if (y < -40) {
+                    index = 0;
+                }
+                if (!onTouch) {
+                    imgs[index].classList.add('active');
+                }
+                $('#test').html(index);
+            }
+        }
+
+        window.addEventListener('deviceorientation', handleOrientation);
+    })
+
+    var flag = true;
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > ($('.hero-container').offset().top - $('.hero-container').height() / 2)) {
+            if (flag) {
+                flag = false;
+                setTimeout(() => {
+                    $(".ads-text p").dn();
+                }, 5000);
+            }
+        }
+    })
+    </script>
+</body>
+
+</html>

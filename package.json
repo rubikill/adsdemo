@@ -1,0 +1,8 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:rubikill/adsdemo.git",
+  "author": "Toan <toan.ht@yeah1.vn>",
+  "license": "MIT"
+}

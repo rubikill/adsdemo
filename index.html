@@ -108,7 +108,16 @@
             <a href="#" class="js-nav-item nav-link" data-id="#js-banner-container">Milo</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="js-nav-item nav-link" data-id="#js-video-container">Rayban</a>
+            <a href="#" class="js-nav-item nav-link" data-id="#js-video-container1">Rayban</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="js-nav-item nav-link" data-id="#js-video-container2">Article</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="js-nav-item nav-link" data-id="#js-video-container3">L’Oréal</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="js-nav-item nav-link" data-id="#js-video-container4">Samsung</a>
           </li>
         </ul>
       </div>
@@ -188,10 +197,31 @@
         </div>
       </div>
     </div>
-    <div id="js-video-container" class="wrap mt-3 js-container d-none">
+    <div id="js-video-container1" class="wrap mt-3 js-container d-none">
       <div id="video-container">
         <video autoplay id='my-video' class='video-js' controls preload='auto' width='210' height='450' poster='MY_VIDEO_POSTER.jpg' data-setup='{}'>
-          <source src='assets/1080.mp4' type='video/mp4'>
+          <source src='assets/1/1080.mp4' type='video/mp4'>
+        </video>
+      </div>
+    </div>
+    <div id="js-video-container2" class="wrap mt-3 js-container d-none">
+      <div id="video-container">
+        <video autoplay id='my-video' class='video-js' controls preload='auto' width='210' height='450' poster='MY_VIDEO_POSTER.jpg' data-setup='{}'>
+          <source src='assets/2/1080.mp4' type='video/mp4'>
+        </video>
+      </div>
+    </div>
+    <div id="js-video-container3" class="wrap mt-3 js-container d-none">
+      <div id="video-container">
+        <video autoplay id='my-video' class='video-js' controls preload='auto' width='210' height='450' poster='MY_VIDEO_POSTER.jpg' data-setup='{}'>
+          <source src='assets/3/1080.mp4' type='video/mp4'>
+        </video>
+      </div>
+    </div>
+    <div id="js-video-container4" class="wrap mt-3 js-container d-none">
+      <div id="video-container">
+        <video autoplay id='my-video' class='video-js' controls preload='auto' width='210' height='450' poster='MY_VIDEO_POSTER.jpg' data-setup='{}'>
+          <source src='assets/4/1080.mp4' type='video/mp4'>
         </video>
       </div>
     </div>
@@ -205,7 +235,7 @@
   $(document).on('click', '.js-nav-item', function(e) {
     var self = $(this);
     $('.js-container').addClass('d-none')
-    console.log(self.attr('data-id'))
+    // console.log(self.attr('data-id'))
     $(self.attr('data-id')).removeClass('d-none')
   })
 
